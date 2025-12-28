@@ -3,149 +3,704 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Care Portal</title>
+    <title>A Novel Origami Exoskeleton for Lumbar Degenerative Disc Disease</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="logo">
-                    <h1>MedCare</h1>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    <!-- 导航栏 -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Issac</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#advantage">Why Choose Us</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact" class="btn-outline">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="hero">
+    <!-- 模块1：首页/Hero区 -->
+    <section id="hero" class="hero">
+        <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">Advanced Medical Care</h2>
-                <p class="hero-subtitle">Comprehensive healthcare solutions for your well-being</p>
+                <h1>A Novel Origami Exoskeleton for Lumbar Degenerative Disc Disease on human spine</h1>
+                <h2>Redefining Spine Health</h2>
+                <p class="tagline">Posture as prescription</p>
+                <p class="value-proposition">Based on latest research, providing 2-4N stable support for L4-L5 segment, significantly reducing intervertebral disc pressure</p>
+                <div class="hero-visual">
+                    <div class="origami-animation">
+                        <!-- Origami structure dynamic expansion animation will be implemented via JS -->
+                        <div class="origami-structure scroll-animate">
+                            <img src="images/OrigamiStructure.png" alt="Origami Structure" class="parallax-image" data-parallax-speed="0.2" style="width: 380px; height: 380px; object-fit: contain;">
+                            <span>Origami Structure</span>
+                        </div>
+                        <div class="wearable-effect scroll-animate">
+                            <img src="images/Wearable Effect.png" alt="Wearable Effect" class="parallax-image" data-parallax-speed="0.3" style="width: 380px; height: 380px; object-fit: contain;">
+                            <span>Wearable Effect</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Our Services</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="#solution" class="btn-primary">View Innovation</a>
+                    <a href="#problem" class="btn-secondary">Learn About DDD</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-placeholder"></div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="services" class="services">
-            <div class="container">
-                <h2 class="section-title">Our Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🏥</div>
-                        <h3>Medical Consultation</h3>
-                        <p>Expert medical advice and consultation from qualified healthcare professionals.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">💊</div>
-                        <h3>Treatment Plans</h3>
-                        <p>Personalized treatment plans tailored to your specific medical needs.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">📊</div>
-                        <h3>Health Monitoring</h3>
-                        <p>Continuous health monitoring and progress tracking for optimal care.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🔬</div>
-                        <h3>Diagnostic Services</h3>
-                        <p>State-of-the-art diagnostic services for accurate medical assessments.</p>
-                    </div>
+    <!-- 模块2：问题阐述 -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Should We Care About Lumbar Health?</h2>
+            </div>
+            
+            <!-- Data Display -->
+            <div class="data-cards">
+                <div class="data-card scroll-animate">
+                    <i class="fas fa-users"></i>
+                    <div class="data-value">40%</div>
+                    <div class="data-label">Adults over 40 worldwide suffer from lumbar problems</div>
+                </div>
+                <div class="data-card scroll-animate">
+                    <i class="fas fa-user-plus"></i>
+                    <div class="data-value">80%</div>
+                    <div class="data-label">People over 80 with DDD</div>
+                </div>
+                <div class="data-card scroll-animate">
+                    <i class="fas fa-chair"></i>
+                    <div class="data-value">3x</div>
+                    <div class="data-label">Prolonged sitting accelerates disc degeneration</div>
                 </div>
             </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2 class="section-title">About Us</h2>
-                        <p>We are dedicated to providing exceptional medical care with a focus on patient well-being and innovative treatment solutions. Our team of experienced healthcare professionals is committed to delivering personalized care that meets the highest standards.</p>
-                        <p>With years of experience in the medical field, we combine cutting-edge technology with compassionate care to ensure the best possible outcomes for our patients.</p>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Patients Served</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">50+</div>
-                            <div class="stat-label">Expert Doctors</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Years Experience</div>
+            
+            <!-- 问题图示 -->
+            <div class="problem-visuals">
+                <div class="visual-card scroll-animate">
+                    <h3>Normal Spine vs DDD Spine</h3>
+                    <div class="spine-comparison">
+                        <div class="spine-image">
+                            <img src="images/vs.png" alt="Normal Spine vs Degenerative Disc Disease Spine" class="parallax-image" data-parallax-speed="0.2" style="width: 500px; height: auto;">
                         </div>
                     </div>
                 </div>
+                <div class="visual-card scroll-animate">
+                    <h3>Intervertebral Disc Pressure Changes</h3>
+                    <div class="pressure-chart">
+                        <img src="images/force_grade.png" alt="Intervertebral Disc Pressure Changes" class="parallax-image" data-parallax-speed="0.2" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;">
+                    </div>
+                </div>
             </div>
-        </section>
+            
+            <!-- Limitations of Existing Solutions -->
+            <div class="existing-solutions">
+                <h3>Limitations of Existing Solutions</h3>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <h4>Traditional Lumbar Support</h4>
+                        <p>Passive support, restricted movement, poor breathability</p>
+                    </div>
+                    <div class="solution-card">
+                        <h4>Physical Therapy</h4>
+                        <p>Requires professional guidance, difficult to maintain daily</p>
+                    </div>
+                    <div class="solution-card">
+                        <h4>Surgical Treatment</h4>
+                        <p>High trauma, long recovery period, higher risk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Contact Us</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <p>We're here to help. Reach out to us through any of the following channels:</p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <strong>Email:</strong>
-                                <a href="mailto:info@medcare.com">info@medcare.com</a>
+    <!-- 模块3：创新解决方案展示 -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="font-size: 26px;">Origami Engineering: Perfect Balance Between Rigid Support and Flexible Movement</h2>
+            </div>
+            
+            <div class="design-principle">
+                <h3>Design Principle</h3>
+                <p class="innovation-point">Core Innovation: Origami structure achieves rigid-flexible dynamic transformation</p>
+            </div>
+            
+            <!-- 轮播组件 -->
+            <div class="model-and-structure carousel-container scroll-animate">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active">
+                        <h4>Upper Structure</h4>
+                        <div class="carousel-image">
+                            <img src="images/上半部分.PNG" alt="Upper Structure">
+                        </div>
+                        <p>Four motor-driven, enabling precise posture adjustment</p>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <h4>Assembly</h4>
+                        <div class="carousel-image">
+                            <img src="images/总装.PNG" alt="Complete Assembly">
+                        </div>
+                        <p>Complete origami exoskeleton assembly with rigid-flexible dynamics</p>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <h4>Lower Structure</h4>
+                        <div class="carousel-image">
+                            <img src="images/下半部分.PNG" alt="Lower Structure">
+                        </div>
+                        <p>Dual parallel lead screws, converting motor rotation to vertical displacement</p>
+                    </div>
+                </div>
+                
+                <!-- 轮播控制按钮 -->
+                <button class="carousel-btn prev-btn">&lt;</button>
+                <button class="carousel-btn next-btn">&gt;</button>
+                
+                <!-- 轮播指示器 -->
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                </div>
+            </div>
+            
+            <!-- 下方 - 核心功能 -->
+            <div class="core-features scroll-animate">
+                <h3>Revolutionary Core Innovations</h3>
+                <div class="features-grid">
+                    <div class="feature-card scroll-animate">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Intelligent Posture Bio-feedback</h4>
+                        <p>Real-time posture sensing, preventive intervention, maintaining correct posture</p>
+                        <span class="verification-tag">Clinical Theory Support</span>
+                    </div>
+                    <div class="feature-card scroll-animate">
+                        <div class="feature-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h4>Targeted L4-L5 Decompression</h4>
+                        <p>Provides adjustable 2-4N supporting force for L4-L5 segment, reducing intervertebral disc pressure</p>
+                        <span class="verification-tag">FEM Simulation Verified</span>
+                    </div>
+                    <div class="feature-card scroll-animate">
+                        <div class="feature-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h4>High-Strength Origami Kinematics</h4>
+                        <p>Origami structure achieves high strength-to-weight ratio, comfortable for long-term wear</p>
+                        <span class="verification-tag">Biomechanical Design</span>
+                    </div>
+                    <div class="feature-card scroll-animate">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <h4>Adaptive Morphological Customization</h4>
+                        <p>Adjustable parameters to meet different body type needs, providing customized support experience</p>
+                        <span class="verification-tag">Ergonomic Optimization</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 电子器件轮播 -->
+            <div class="electronic-components scroll-animate">
+                <h3>Electronic Components</h3>
+                <div class="carousel-3-container">
+                    <div class="carousel-3-wrapper">
+                        <div class="carousel-3-slide">
+                            <div class="component-item">
+                                <img src="images/Arduino.png" alt="Arduino">
+                                <span>Arduino</span>
                             </div>
-                            <div class="contact-item">
-                                <strong>Phone:</strong>
-                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            <div class="component-item">
+                                <img src="images/Buslinker.png" alt="Buslinker">
+                                <span>Buslinker</span>
                             </div>
-                            <div class="contact-item">
-                                <strong>Address:</strong>
-                                <span>123 Medical Center Drive, Healthcare City, HC 12345</span>
+                            <div class="component-item">
+                                <img src="images/MPU6050.png" alt="MPU6050">
+                                <span>MPU6050</span>
                             </div>
                         </div>
+                        <div class="carousel-3-slide">
+                            <div class="component-item">
+                                <img src="images/Press.png" alt="Pressure Sensor">
+                                <span>Pressure Sensor</span>
+                            </div>
+                            <div class="component-item">
+                                <img src="images/Servo.png" alt="Servo Motor">
+                                <span>Servo Motor</span>
+                            </div>
+                            <!-- 添加一个空的组件项，确保每个幻灯片都有三个项，避免布局错乱 -->
+                            <div class="component-item empty"></div>
+                        </div>
                     </div>
-                    <form class="contact-form" id="contactForm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块4：为什么选择我们的方案 -->
+    <section id="advantage" class="advantage">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Us: Data-Driven Innovation Advantages</h2>
+            </div>
+            
+            <div class="advantage-content">
+                <div class="comparison-charts">
+                    <h3>Force Comparison Analysis</h3>
+                    <div class="chart-grid">
+                        <div class="card main-chart-wrapper">
+                            <div id="diffChart" class="chart-container"></div>
+                        </div>
+                        <div class="card">
+                            <div id="f5Chart" class="chart-container"></div>
+                        </div>
+                        <div class="card">
+                            <div id="f6Chart" class="chart-container"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="advantage-grid">
+                    <div class="advantage-card scroll-animate">
+                        <div class="advantage-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Scientific Experiment Validation</h4>
+                        <p>Measured stable 2-4N support force at L4-L5 segment</p>
+                        <span class="verification-tag">Experimental Data Driven</span>
+                    </div>
+                    <div class="advantage-card scroll-animate">
+                        <div class="advantage-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4>Proven Health Benefits</h4>
+                        <p>Slowing degeneration and improving quality of life</p>
+                        <span class="verification-tag">Biomechanical Testing</span>
+                    </div>
+                    <div class="advantage-card scroll-animate">
+                        <div class="advantage-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h4>Unrestricted Mobility</h4>
+                        <p>Maintains natural movement freedom while providing targeted support, no impact on daily activities</p>
+                        <span class="verification-tag">Motion Analysis Verified</span>
+                    </div>
+                    <div class="advantage-card scroll-animate">
+                        <div class="advantage-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Revolutionary Technology</h4>
+                        <p>Fusion of origami engineering and biomedicine, opening a new chapter in spinal health</p>
+                        <span class="verification-tag">Patent-Pending Design</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-table">
+                    <h3>Solution Comparison</h3>
+                    <p class="comparison-intro">Our experiment aims to quantify if our wearable spinal assist device can effectively reduce mechanical load on the L4-L5 lumbar segment during trunk flexion. Since direct disc pressure measurement is invasive, we use the device's support force as a non-invasive proxy for reduced disc load.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Traditional Lumbar Support</th>
+                                <th>Physical Therapy</th>
+                                <th>Our Solution</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Support Force</td>
+                                <td>Passive, non-adjustable</td>
+                                <td>Manual, inconsistent</td>
+                                <td>2-4N controlled support at L4-L5 segment</td>
+                            </tr>
+                            <tr>
+                                <td>Mobility Restriction</td>
+                                <td>Significant limitation</td>
+                                <td>No restriction</td>
+                                <td>Minimal to none</td>
+                            </tr>
+                            <tr>
+                                <td>Daily Use</td>
+                                <td>Hot and uncomfortable</td>
+                                <td>Requires professional guidance</td>
+                                <td>Lightweight, comfortable</td>
+                            </tr>
+                            <tr>
+                                <td>Preventive Effect</td>
+                                <td>Limited</td>
+                                <td>Good</td>
+                                <td>Reduces L4-L5 disc load during flexion</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块5：影响力与价值主张 -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Value Beyond Innovation: A Multi-Dimensional Impact</h2>
+            </div>
+            
+            <div class="value-matrix">
+                <div class="value-category">
+                    <h3>Medical Value</h3>
+                    <div class="value-items">
+                        <div class="value-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <p>Minimize Degenerative Disc Disease (DDD) Prevalence</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <p>Avert Invasive Surgical Interventions</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-hourglass-half"></i>
+                            <p>Slow down intervertebral disc degeneration</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="value-category">
+                    <h3>Social Value</h3>
+                    <div class="value-items">
+                        <div class="value-item">
+                            <i class="fas fa-users-cog"></i>
+                            <p>Safeguarding High-Risk Workforce Wellness</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-sun"></i>
+                            <p>Improve quality of life for the elderly</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-university"></i>
+                            <p>Alleviating Global Healthcare Infrastructure Strain</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="value-category">
+                    <h3>Economic Value</h3>
+                    <div class="value-items">
+                        <div class="value-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <p>High ROI: Prioritizing Prevention over Costly Treatment</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <p>Enormous global spinal health market potential</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-rocket"></i>
+                            <p>Business opportunities from innovative technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="market-potential">
+                <h3>Capturing a Billion-Dollar Blue Ocean</h3>
+                <div class="market-metric">
+                    <div class="metric-value">
+                        <i class="fas fa-chart-line metric-icon"></i>
+                        <span class="metric-number">$29.77</span>
+                        <span class="metric-unit">Billion</span>
+                    </div>
+                    <div class="metric-subtext">Projected Global Market Size by 2030</div>
+                </div>
+                <p class="market-description">The global spinal health market is surging toward a projected $29.77 billion by 2030. Our core technology sits at the epicenter of this transformation—fusing cutting-edge innovation with critical clinical demands. We are not just creating a product; we are redefining the standard of care for hundreds of millions of lumbar patients worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块7：Conrad Challenge愿景 -->
+    <section id="vision" class="vision">
+        <div class="container">
+            <div class="section-header">
+                <h2>From Lab to Life: Our Proven Foundation</h2>
+            </div>
+            
+            <div class="vision-intro">
+                <p>With Phase 1 (Proof of Concept) successfully completed, we have validated our core origami structures and mechanical performance. This solid foundation positions us perfectly to capture the $29.77 billion spinal health market as we move into prototype optimization.</p>
+            </div>
+            
+            <div class="progress-tracker">
+                <div class="timeline-item completed">
+                    <div class="timeline-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Concept Validated <span class="status-badge completed">CORE TECHNOLOGY VALIDATED</span></h3>
+                        </div>
+                        <div class="timeline-details">
+                            <p class="timeline-date">Phase 1 (Completed)</p>
+                            <ul class="timeline-achievements">
+                                <li>Completed origami structure design</li>
+                                <li>Validated 2-4N support force</li>
+                                <li>Completed proof of concept testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item pending">
+                    <div class="timeline-icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Prototype Optimization</h3>
+                        </div>
+                        <div class="timeline-details">
+                            <p class="timeline-date">Phase 2 (Future)</p>
+                            <ul class="timeline-achievements">
+                                <li>Lightweight structure improvement</li>
+                                <li>Control system optimization</li>
+                                <li>User experience enhancement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item pending">
+                    <div class="timeline-icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Clinical Testing</h3>
+                        </div>
+                        <div class="timeline-details">
+                            <p class="timeline-date">Phase 3 (Future)</p>
+                            <ul class="timeline-achievements">
+                                <li>Recruit test volunteers</li>
+                                <li>Long-term effect evaluation</li>
+                                <li>Collect user feedback</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item pending">
+                    <div class="timeline-icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Commercialization</h3>
+                        </div>
+                        <div class="timeline-details">
+                            <p class="timeline-date">Phase 4 (Future)</p>
+                            <ul class="timeline-achievements">
+                                <li>Mass production development</li>
+                                <li>Regulatory approval</li>
+                                <li>Market promotion and sales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="market-potential-roadmap">
+                <h3>Market Potential</h3>
+                <div class="market-value">
+                    <span class="market-number">$29.77</span>
+                    <span class="market-unit">Billion</span>
+                </div>
+                <p class="market-description">Projected global spinal health market size by 2030</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块6：团队介绍 -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>多元背景团队，专注解决实际问题</h2>
+            </div>
+            
+            <div class="team-photo">
+                <div class="photo-placeholder">
+                    <i class="fas fa-users"></i>
+                    <span>实验室工作场景团队合照</span>
+                </div>
+            </div>
+            
+            <div class="team-stories">
+                <h3>我们的故事</h3>
+                <p>从观察到腰椎退行性疾病(DDD)对人们生活的严重影响，到探索工程学解决方案的可能性，我们的团队经历了从概念到原型的完整研发过程。通过跨学科合作，我们将折纸艺术与现代生物医学工程相结合，创造出这款具有革命性意义的智能腰椎外骨骼。</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="member-photo">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="member-info">
+                        <h4>吴云浩</h4>
+                        <p class="member-role">项目负责人 / 首席科学家</p>
+                        <p class="member-expertise">生物医学工程博士，专注于康复机器人和生物力学研究</p>
+                        <div class="member-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>将工程创新与医疗需求完美结合</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="member-photo">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <div class="member-info">
+                        <h4>李医生</h4>
+                        <p class="member-role">医学顾问</p>
+                        <p class="member-expertise">骨科主任医师，拥有丰富的腰椎疾病临床治疗经验</p>
+                        <div class="member-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>为患者提供更安全有效的解决方案</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="member-photo">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <div class="member-info">
+                        <h4>张工程师</h4>
+                        <p class="member-role">机械设计工程师</p>
+                        <p class="member-expertise">专注于轻量化结构设计和3D打印技术应用</p>
+                        <div class="member-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>折纸结构的工程实现充满挑战与乐趣</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="member-photo">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="member-info">
+                        <h4>陈工程师</h4>
+                        <p class="member-role">控制系统工程师</p>
+                        <p class="member-expertise">负责电机控制与传感集成系统开发</p>
+                        <div class="member-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>精确控制是产品性能的关键</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>联系我们</h2>
+                <p>如果您对我们的项目感兴趣，或希望进行合作，请随时联系我们</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>联系方式</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>team.orio@email.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+86 123 4567 8910</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>北京市海淀区中关村大街59号</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>发送消息</h3>
+                    <form action="#" method="POST">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">姓名</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">邮箱</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="institution">机构</label>
+                            <input type="text" id="institution" name="institution">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">合作意向/留言</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn-primary">发送消息</button>
                     </form>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 MedCare. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ORIO</h3>
+                    <p>智能折纸腰椎外骨骼项目</p>
+                    <p>2026康莱德挑战赛参赛项目</p>
+                    <p>© 2024 腰椎折纸外骨骼项目团队. 保留所有权利.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">首页</a>
+                    <a href="#problem">问题阐述</a>
+                    <a href="#solution">创新方案</a>
+                    <a href="#advantage">选择我们</a>
+                    <a href="#impact">影响力</a>
+                    <a href="#team">团队</a>
+                    <a href="#vision">愿景</a>
+                    <a href="#contact">联系我们</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- 引入JavaScript库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
